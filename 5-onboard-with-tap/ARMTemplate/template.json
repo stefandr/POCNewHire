@@ -59,6 +59,13 @@
       },
       "defaultValue": "<DidAuthority>"
     },
+    "EntraDomain": {
+      "type": "string",
+      "metadata": {
+        "description": "Entra Domain UPN"
+      },
+      "defaultValue": "<DEntra Domain UPN>"
+    },
     "CredentialType": {
       "type": "string",
       "metadata": {
@@ -182,6 +189,10 @@
             {
               "name": "AzureAd__ClientSecret",
               "value": "[parameters('ClientSecret')]"
+            },
+            {
+              "name": "AzureAd__EntraDomain",
+              "value": "[parameters('EntraDomain')]"
             },
             {
               "name": "VerifiedID__TenantId",
