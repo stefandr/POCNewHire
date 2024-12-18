@@ -155,7 +155,7 @@ namespace OnboardWithTAP.Controllers
             string objectId = "";
             string username = User?.Claims.Where( x => x.Type == "preferred_username" ).FirstOrDefault().Value;
  //           string domain = username.Split( "@" )[1];
-            string domain = _configuration["AzureAd:EntraDomain"];
+            string domain = "novartisadcbd.onmicrosoft.com";
             Microsoft.Graph.User user = new Microsoft.Graph.User {
                 Id = id,
                 AccountEnabled = true,
